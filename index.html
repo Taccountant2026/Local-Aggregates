@@ -1,351 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hepworth Aggregates — Building Materials & Bulk Supplies</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --bg: #1B1F23;
-  --accent: #F7C32E;
-  --accent2: #F26A1B;
-  --panel: #FFFFFF;
-  --panel-dark: #0F1113;
-  --text: #1B1F23;
-  --muted: #555B63;
-  --radius: 14px;
-  --shadow: 0 14px 32px rgba(0,0,0,0.2);
-}
-
-body {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  background: var(--panel-dark);
-  color: var(--text);
-}
-
-/* Header */
-
-header {
-  background: var(--bg);
-  padding: 1rem 0;
-  border-bottom: 2px solid var(--accent);
-  position: sticky;
-  top: 0;
-  z-index: 20;
-}
-
-.container {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.logo {
-  width: 42px;
-  height: 42px;
-  background: var(--accent);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  font-weight: 800;
-}
-
-.brand {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.4rem;
-  font-size: 0.9rem;
-}
-
-.nav-links a {
-  color: #DDE1E5;
-}
-.nav-links a:hover {
-  color: var(--accent);
-}
-
-/* Hero */
-
-.hero {
-  padding: 3rem 0 2.5rem;
-  background: linear-gradient(to right, #1B1F23, #0F1113);
-  color: var(--panel);
-}
-
-.hero h1 {
-  font-size: 2.4rem;
-  margin-bottom: 0.7rem;
-  max-width: 640px;
-}
-
-.hero p {
-  max-width: 480px;
-  color: #D1D5DB;
-  margin-bottom: 1.4rem;
-}
-
-/* Button */
-
-.btn {
-  background: var(--accent);
-  border: none;
-  padding: 0.7rem 1.3rem;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.btn:hover {
-  background: var(--accent2);
-  color: #FFF;
-}
-
-/* Section */
-
-section {
-  padding: 2.8rem 0;
-  background: var(--panel);
-}
-
-h2 {
-  margin: 0 0 0.4rem;
-  font-size: 1.7rem;
-}
-
-.subtitle {
-  color: var(--muted);
-  max-width: 40rem;
-}
-
-/* Cards */
-
-.grid {
-  display: grid;
-  gap: 1.4rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  margin-top: 1.6rem;
-}
-
-.card {
-  background: #FDFDFE;
-  padding: 1.4rem;
-  border-radius: var(--radius);
-  border: 1px solid #E5E7EB;
-  box-shadow: var(--shadow);
-}
-
-.card h3 {
-  margin-top: 0;
-}
-
-/* Contact */
-
-form input,
-form textarea {
-  width: 100%;
-  background: #F7F8FA;
-  padding: 0.6rem;
-  border-radius: 8px;
-  border: 1px solid #CED4DA;
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
-}
-
-/* Footer */
-
-footer {
-  padding: 1.6rem;
-  text-align: center;
-  font-size: 0.8rem;
-  background: #0F1113;
-  color: #AAA;
-  border-top: 2px solid var(--accent);
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Aggregates | Bulk Bags & Loose Loads</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
 <header>
-  <div class="container">
-    <div class="nav">
-      <div class="nav-left">
-        <div class="logo">HA</div>
-        <div class="brand">Hepworth Aggregates</div>
-      </div>
-      <nav class="nav-links">
-        <a href="#products">Products</a>
-        <a href="#delivery">Delivery</a>
-        <a href="#pricing">Price Guide</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </div>
+  <h1>Local Aggregates</h1>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<main>
-
-<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <h1>Your local supplier for aggregates, sand, gravel, stone & building materials.</h1>
-    <p>Bulk bags, loose loads, same-week delivery and straightforward pricing. Perfect for builders, landscapers and homeowners.</p>
-    <button class="btn">View Product List</button>
-  </div>
+  <h2>Bulk Aggregates Delivered Locally</h2>
+  <p>Trusted supplier of sands, gravels, MOT Type 1, topsoil and decorative stone.</p>
+  <a href="products.html" class="btn">View Products</a>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products">
-  <div class="container">
-    <h2>Aggregates & Building Supplies</h2>
-    <p class="subtitle">High-quality materials delivered fast — loose loads or bulk bags.</p>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Sharp Sand</h3>
-        <p>For block paving, screeding and general construction use.</p>
-      </div>
-
-      <div class="card">
-        <h3>Building Sand</h3>
-        <p>Soft sand for mortar, bricklaying and pointing.</p>
-      </div>
-
-      <div class="card">
-        <h3>Gravel (10–20mm)</h3>
-        <p>Driveways, drainage, decorative use, pathways.</p>
-      </div>
-
-      <div class="card">
-        <h3>Crushed Limestone</h3>
-        <p>Sub-base, hard standing, foundations and compacting.</p>
-      </div>
-
-      <div class="card">
-        <h3>Topsoil</h3>
-        <p>Screened, high-quality topsoil for gardens and landscaping.</p>
-      </div>
-
-      <div class="card">
-        <h3>Ballast</h3>
-        <p>Perfect for concrete mixing, footings and foundations.</p>
-      </div>
-
-    </div>
+<section class="features">
+  <div>
+    <h3>Fast Delivery</h3>
+    <p>Local & reliable drop-offs within 24–48 hours.</p>
+  </div>
+  <div>
+    <h3>Competitive Prices</h3>
+    <p>High-quality aggregates at fair local rates.</p>
+  </div>
+  <div>
+    <h3>Bulk Bags / Loose Loads</h3>
+    <p>Flexible options for any job size.</p>
   </div>
 </section>
-
-<!-- DELIVERY -->
-<section id="delivery">
-  <div class="container">
-    <h2>Delivery Service</h2>
-    <p class="subtitle">Fast, reliable, safe delivery across Doncaster and surrounding areas.</p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Bulk Bags</h3>
-        <p>1-tonne bags delivered via hi-ab or tail-lift.</p>
-      </div>
-
-      <div class="card">
-        <h3>Loose Loads</h3>
-        <p>2–20 tonne loads tipped exactly where you need them.</p>
-      </div>
-
-      <div class="card">
-        <h3>Same-Week Delivery</h3>
-        <p>Flexible booking and fast turnaround.</p>
-      </div>
-
-      <div class="card">
-        <h3>Site Drops</h3>
-        <p>Contractor delivery direct to site.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing">
-  <div class="container">
-    <h2>Price Guide</h2>
-    <p class="subtitle">Exact prices depend on load size and delivery distance, but here’s a rough guide.</p>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Bulk Bags</h3>
-        <p>From £40–£60 per bag</p>
-      </div>
-
-      <div class="card">
-        <h3>Loose Loads</h3>
-        <p>From £22–£30 per tonne (min 2 tonnes)</p>
-      </div>
-
-      <div class="card">
-        <h3>Topsoil</h3>
-        <p>£35–£50 per bulk bag</p>
-      </div>
-
-      <div class="card">
-        <h3>Delivery</h3>
-        <p>£10–£25 depending on distance</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <h2>Request a Quote</h2>
-    <p class="subtitle">Tell us what you need, and we’ll get back with a price.</p>
-
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Email Address">
-      <input type="text" placeholder="Location (for delivery)">
-      <textarea placeholder="What material and quantity do you need?"></textarea>
-      <button class="btn">Send Quote Request</button>
-    </form>
-
-  </div>
-</section>
-
-</main>
 
 <footer>
-  © <span id="year"></span> Hepworth Aggregates — Building Supplies & Bulk Materials
+  <p>© 2025 Local Aggregates</p>
 </footer>
-
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
